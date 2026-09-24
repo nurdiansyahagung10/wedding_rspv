@@ -1370,10 +1370,10 @@ function App() {
       <section
         id="story"
         ref={storySectionRef}
-        className="relative z-30 w-full bg-transparent text-stone-800 pt-20 pb-12 flex flex-col justify-center will-change-[opacity]"
+        className="relative z-30 w-full bg-transparent text-black pt-20 pb-12 flex flex-col justify-center will-change-[opacity]"
       >
         <div className="max-w-5xl mx-auto text-center space-y-10 sm:space-y-12 px-6">
-          <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] mb-2 text-black bg-stone-100 border border-stone-300 px-4 py-2 rounded-3xl font-semibold">
+          <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] mb-2 text-black bg-slate-100 px-5 sm:px-6 py-2 sm:py-4 rounded-3xl font-semibold">
             <img src="/images/Heart.svg" alt="" className="w-4 h-4 shrink-0" />
             <span>A Celebration of Love</span>
           </span>
@@ -1444,7 +1444,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 sm:mb-20 pt-10">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] mb-4 text-stone-800 bg-stone-100 border border-stone-300/80 px-4 py-1.5 rounded-full font-medium">
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] mb-4 text-black bg-slate-100 px-5 sm:px-6 py-2 sm:py-4 rounded-full font-medium">
               <svg
                 className="w-3.5 h-3.5"
                 viewBox="0 0 24 24"
@@ -1459,7 +1459,7 @@ function App() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 border-b border-stone-200 mb-14 text-center">
+          <div className="grid grid-cols-3  mb-14 text-center">
             {storyMilestones.map((tab, idx) => {
               const isActive = activeStoryTab === idx;
               return (
@@ -1496,7 +1496,7 @@ function App() {
                 </div>
 
                 <div className="text-right">
-                  <h4 className="font-serif text-xl sm:text-2xl text-stone-800 leading-tight">
+                  <h4 className="font-serif text-xl sm:text-2xl text-black leading-tight">
                     {storyMilestones[activeStoryTab].title}
                   </h4>
                   <span className="font-serif text-6xl sm:text-7xl lg:text-8xl text-black tracking-tighter leading-none">
@@ -1525,7 +1525,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="relative z-20 w-[46%] sm:w-[42%] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-2 border-stone-800/40">
+                <div className="relative z-20 w-[46%] sm:w-[42%] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-2 border-black/40">
                   <img
                     src={storyMilestones[activeStoryTab].mainImg}
                     alt={storyMilestones[activeStoryTab].title}
@@ -1546,7 +1546,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 pt-16">
-            <span className="schedule-badge inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] mb-4 text-stone-800 bg-stone-100 border border-stone-300/80 px-4 py-1.5 rounded-full font-medium will-change-[background-color,color,border-color]">
+            <span className="schedule-badge inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] mb-4 text-black! bg-white! px-5 sm:px-6 py-2 sm:py-4 rounded-full font-medium will-change-[background-color,color,border-color]">
               <svg
                 className="w-3.5 h-3.5"
                 viewBox="0 0 24 24"
@@ -1576,7 +1576,7 @@ function App() {
                   <p>September 2026</p>
                   <p>3:00 PM</p>
                 </div>
-                <div className="mt-4 inline-block w-full bg-[#e5e9f0]/80 rounded-2xl px-4 py-3 text-xs sm:text-sm text-stone-800 leading-snug">
+                <div className="mt-4 inline-block w-full bg-[#e5e9f0]/80 rounded-2xl px-4 py-3 text-xs sm:text-sm text-black leading-snug">
                   Gereja Katedral,
                   <br />
                   Ruang Holy Matrimony
@@ -1631,7 +1631,7 @@ function App() {
                 <p className="text-base sm:text-lg font-medium text-black">
                   7:00 PM
                 </p>
-                <div className="inline-block w-full bg-[#e5e9f0]/80 rounded-2xl px-4 py-3.5 text-xs sm:text-sm text-stone-800 leading-snug">
+                <div className="inline-block w-full bg-[#e5e9f0]/80 rounded-2xl px-4 py-3.5 text-xs sm:text-sm text-black leading-snug">
                   Grand Ballroom Hotel,
                   <br />
                   Hall Aster Floor 3
@@ -1653,7 +1653,7 @@ function App() {
       <section
         id="countdown"
         ref={countdownSectionRef}
-        className="relative z-30 w-full min-h-[70vh] flex flex-col items-center justify-center pb-20 px-4 sm:px-6 overflow-hidden bg-transparent select-none"
+        className="relative z-30 w-full  flex flex-col items-center justify-center pb-24 px-4 sm:px-6 overflow-hidden bg-transparent select-none"
       >
         <div className="inline-flex items-center gap-2.5 px-5 sm:px-6 py-2 sm:py-4 rounded-full bg-white backdrop-blur-md shadow-md mb-6 sm:mb-10">
           <svg
@@ -2546,7 +2546,7 @@ function App() {
       {/* ================= SECTION PENUTUP ================= */}
       <section
         ref={closingSectionRef}
-        className="relative z-30 w-full min-h-[70vh] bg-transparent  px-6 lg:px-12 flex flex-col items-center justify-center text-center overflow-hidden"
+        className="relative z-30 w-full  bg-transparent  px-6 lg:px-12 flex flex-col items-center justify-center text-center overflow-hidden"
       >
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="w-12 h-12 mx-auto rounded-full border border-white/30 flex items-center justify-center">
